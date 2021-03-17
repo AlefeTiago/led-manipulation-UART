@@ -53,7 +53,7 @@ transmissão vazio”.
 Além disso, sempre que não houver comandos a processar no buffer circular (ou seja, o buffer está vazio), a
 seguinte mensagem "Vazio!\n" deve ser enviada a cada 500ms.
 
-##Cuidado:
+Cuidado:
 - A interrupção associada ao evento “buffer de transmissão vazio” é disparada continuamente caso o
 buffer esteja limpo. Sendo assim, é preciso desligar esta interrupção ao terminar de transmitir uma
 sequência completa de caracteres; caso contrário, uma nova interrupção será gerada mesmo se não
@@ -63,7 +63,7 @@ do programa principal, é importante declará-las como variáveis globais com o 
 assegurar o correto funcionamento.
 
 
-##Especificações da USART:
+Especificações da USART:
 - Velocidade de transmissão normal (i.e., modo double-speed desativado);
 - Modo de transmissão multi-processador desabilitado;
 - Número de bits de dados por frame igual a 8;
